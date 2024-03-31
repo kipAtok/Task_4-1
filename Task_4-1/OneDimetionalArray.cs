@@ -204,7 +204,7 @@ class OneDimetionalArray<T>
         }
     }
 
-    public void ApplyToEveryValue(Func<T,T> action)
+    public void ApplyToEveryValue(Func<T, T> action)
     {
         T[] appliedArr = GetAppliedToEveryValue(action);
         ReFill(appliedArr);
@@ -215,8 +215,7 @@ class OneDimetionalArray<T>
         T[] toRet = new T[_index];
         for (int i = 0; i < _index; i++)
         {
-            toRet[i] = _myArr[i];
-            toRet[i] = action(toRet[i]);
+            toRet[i] = action(_myArr[i]);
         }
         return toRet;
     }

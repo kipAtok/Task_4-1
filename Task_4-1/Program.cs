@@ -6,8 +6,8 @@ class Programm
     {
         var arrString = new OneDimetionalArray<string>();
         var arrInt = new OneDimetionalArray<int>();
-        string[] valString = {"ban", "school", "joke", "computer", "apple", "windows", "0_0", "-_-"};
-        int[] valInt = {4, 13, 67, 1337, 228, 666, 34, 25};
+        string[] valString = { "ban", "school", "joke", "computer", "apple", "windows", "0_0", "-_-" };
+        int[] valInt = { 4, 13, 67, 1337, 228, 666, 34, 25 };
 
         for (int i = 0; i < 8; i++)
         {
