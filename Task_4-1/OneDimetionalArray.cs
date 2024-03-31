@@ -40,7 +40,7 @@ class OneDimetionalArray<T>
         return _index;
     }
 
-    public int CountWithCondition(Func<T, bool> condition)
+    public int CountByCondition(Func<T, bool> condition)
     {
         int cnt = 0;
         for (int i = 0; i < _index; i++)
@@ -97,7 +97,7 @@ class OneDimetionalArray<T>
     {
         if (index + amount - 1 >= _index)
         {
-            Console.WriteLine("(AmountFromIndex) Too big amount or index; Empty array was returned");
+            Console.WriteLine("(GetAmountFromIndex) Too big amount or index; Empty array was returned");
             return _emptyArray;
         }
         T[] toRet = new T[amount];
@@ -123,7 +123,7 @@ class OneDimetionalArray<T>
 
     public T[] GetEveryByCondition(Func<T, bool> condition)
     {
-        int amount = CountWithCondition(condition);
+        int amount = CountByCondition(condition);
         if (amount == 0)
         {
             Console.WriteLine("(GetEveryByCondition) No elements found; Empty array was returned");
